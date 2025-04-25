@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
+
+import NavbarComponent from './components/NavbarComponent';
+import FooterComponent from './components/FooterComponent';
+
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-content">
+        <NavbarComponent />
+
+        <Suspense fallback={<div className="page-loader">Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+
+        <FooterComponent />
+      </div>
     </div>
   );
 }

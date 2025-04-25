@@ -1,0 +1,100 @@
+.project-collaboration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem
+}
+
+.collaboration-left-image,
+.collaboration-right-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.collaboration-left-image img,
+.collaboration-right-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    object-fit: cover;
+    z-index: 3
+}
+
+.collaboration-button-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px
+}
+
+.collaboration-title {
+    color: #fdf4db;
+    font-size: 3rem
+}
+
+.collaboration-button {
+    position: relative;
+    padding: 15px 25px;
+    background-color: #071220;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 0;
+    overflow: hidden;
+    transition: .3s;
+    text-transform: uppercase
+}
+
+.collaboration-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00fbf6, #25f0f1, #54e1f7, #8dd1fb, #b896ff);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1
+}
+
+.collaboration-button:hover {
+    background-color: #fff;
+    color: #071220;
+    transform: scale(1.1);
+    cursor: pointer
+}
+
+@media (max-width:768px) {
+    .project-collaboration {
+        margin-top: 20px;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column
+    }
+
+    .collaboration-left-image {
+        display: none
+    }
+
+    .collaboration-button-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin-top: 0;
+        text-align: center
+    }
+
+    .collaboration-button {
+        font-size: 1rem
+    }
+}

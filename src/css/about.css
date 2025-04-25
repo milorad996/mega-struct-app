@@ -1,0 +1,289 @@
+.history-block-title,
+.history-subtitle,
+.history-title,
+.section-title,
+.worker-name {
+    text-transform: uppercase
+}
+
+.about-main {
+    overflow-x: hidden
+}
+
+.about-hero {
+    position: relative;
+    background-image: url('about-hero-min.jpeg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    image-rendering: auto
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1
+}
+
+.who-we-are-container {
+    padding: 6rem 20rem;
+    background-color: #000a15
+}
+
+.our-mission-container,
+.who-we-are,
+.workers-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem
+}
+
+.our-mission-image,
+.who-we-are-image,
+.who-we-are-text {
+    flex-basis: 50%
+}
+
+.who-we-are-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.who-we-are-title {
+    color: #fdf4db;
+    font-size: 3rem;
+    margin-bottom: 1rem
+}
+
+.who-we-are-subtitle {
+    color: #cacaca;
+    margin-bottom: 1rem;
+    font-size: 1.1rem
+}
+
+.aos-line {
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(to right, #00fbf6, #25f0f1, #54e1f7, #8dd1fb, #b896ff);
+    opacity: 0;
+    transition: 1s ease-in-out
+}
+
+.history-wrapper {
+    padding: 6rem 20rem;
+    background-color: #000a15;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.history-section {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #071220;
+    padding: 2rem
+}
+
+.history-left-images {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-areas: "img1 img1" "img2 img3";
+    gap: 1rem
+}
+
+.history-right-text,
+.our-mission-text {
+    flex-basis: 50%;
+    color: #fff
+}
+
+.history-img1 {
+    grid-area: img1
+}
+
+.history-img2 {
+    grid-area: img2;
+    grid-area: img3
+}
+
+.history-left-images img {
+    width: 100%;
+    height: 300px
+}
+
+.history-block-title {
+    margin-bottom: 2rem;
+    color: #fdf4db;
+    font-size: 1.5rem
+}
+
+.history-description {
+    margin-bottom: 1rem;
+    color: #cacaca
+}
+
+.history-title {
+    color: #fdf4db;
+    font-size: 2.5rem
+}
+
+.history-subtitle {
+    font-size: 1.2rem;
+    color: #00fbf6
+}
+
+.history-heading {
+    text-align: center;
+    padding-bottom: 2rem
+}
+
+.construction-workers {
+    background-color: #000a15;
+    padding: 5rem 20rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.worker-card {
+    flex-basis: 33.33%;
+    height: 500px;
+    padding: 1rem;
+    background-color: #071220
+}
+
+.worker-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover
+}
+
+.worker-card .worker1 {
+    object-position: 80% 100%
+}
+
+.worker-description {
+    text-align: center;
+    margin-top: 1rem
+}
+
+.worker-name {
+    color: #fdf4db
+}
+
+.worker-position {
+    color: #00fbf6
+}
+
+.section-title {
+    color: #fdf4db;
+    margin-bottom: 3rem;
+    font-size: 2.5rem
+}
+
+.our-mission-section {
+    background-color: #000a15;
+    padding: 7rem 20rem
+}
+
+.our-mission-image img {
+    width: 100%;
+    height: auto
+}
+
+.target-arrow {
+    font-size: 4.5rem;
+    color: #cacaca
+}
+
+.our-mission-title {
+    font-size: 2.5rem;
+    color: #fdf4db;
+    margin-bottom: 2rem
+}
+
+.our-mission-subtitle1 {
+    margin-top: 2rem;
+    color: #cacaca;
+    font-size: 1.1rem
+}
+
+.our-mission-subtitle2 {
+    margin-top: 1rem;
+    color: #cacaca;
+    font-size: 1.1rem
+}
+
+@media (max-width: 768px) {
+    .who-we-are-container {
+        padding: 5rem 1rem;
+    }
+
+    .who-we-are {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .history-wrapper {
+        padding: 5rem 1rem
+    }
+
+    .history-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .history-left-images img {
+        width: 100%;
+        height: 250px
+    }
+
+    .construction-workers {
+        padding: 5rem 1rem;
+    }
+
+    .workers-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .our-mission-section {
+        padding: 5rem 1rem;
+    }
+
+    .our-mission-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-hero {
+        height: 60vh;
+    }
+
+    .history-title {
+        font-size: 1.7rem
+    }
+
+    .history-subtitle {
+        font-size: 1rem;
+    }
+
+    .our-mission-title {
+        font-size: 2.2rem;
+    }
+}

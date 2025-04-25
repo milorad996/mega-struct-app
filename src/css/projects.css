@@ -1,0 +1,438 @@
+.projects-contact,
+.projects-hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: auto
+}
+
+.projects-main {
+    background-color: #000a15;
+    color: #fff
+}
+
+.projects-hero-section {
+    background-image: url('projects-hero.jpg');
+    width: 100%;
+    height: 70vh;
+    background-position: 80%;
+    position: relative
+}
+
+.projects-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .7);
+    width: 50%;
+    height: 50%;
+    border-top-right-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px)
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fdf4db;
+    letter-spacing: 2px
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
+    color: #00fbf6;
+    margin-top: .5rem
+}
+
+.featured-projects {
+    padding: 6rem 20rem;
+    text-align: center
+}
+
+.section-featured-title {
+    font-size: 2.5rem;
+    color: #fdf4db;
+    margin-bottom: .5rem;
+    text-transform: uppercase
+}
+
+.section-featured-subtitle {
+    color: #00fbf6;
+    margin-bottom: 5rem;
+    font-size: 1.1rem
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem
+}
+
+.project-card {
+    background-color: #0d1b2a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 251, 246, .1);
+    transition: transform .3s, box-shadow .3s;
+    cursor: pointer
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 251, 246, .25)
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block
+}
+
+.country-image img,
+.lightbox-overlay,
+.sustainability-image img {
+    width: 100%;
+    height: 100%
+}
+
+.project-info {
+    padding: 1rem;
+    text-align: left
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #fdf4db
+}
+
+.project-info .location {
+    font-size: .95rem;
+    color: #00fbf6;
+    margin: .3rem 0
+}
+
+.project-info .type {
+    font-size: .95rem;
+    color: #cacaca
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #000
+}
+
+.countries-section {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 20rem
+}
+
+.countries-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+.country-card {
+    flex-basis: 25%;
+    height: 350px;
+    background-color: #000a15;
+    transition: transform .3s;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.country-image {
+    width: 100%;
+    height: 80%;
+    overflow: hidden
+}
+
+.country-image img {
+    transition: transform .5s
+}
+
+.country-title {
+    padding-left: .5rem;
+    padding-top: 1rem;
+    color: #fdf4db;
+    text-transform: uppercase
+}
+
+.countries-section-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fdf4db;
+    padding-bottom: .5rem;
+    transition: color .3s
+}
+
+.countries-section-subtitle {
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    color: #00fbf6
+}
+
+.country-card:hover img {
+    transform: scale(1.3)
+}
+
+.country-card:hover .country-title {
+    color: #00fbf6
+}
+
+.sustainability-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-bottom: 6rem
+}
+
+.sustainability-title {
+    padding-left: 20rem;
+    color: #fdf4db;
+    font-size: 3rem;
+    text-transform: uppercase
+}
+
+.sustainability-subtitle {
+    padding-left: 20rem;
+    color: #00fbf6;
+    font-size: 1.2rem;
+    padding-bottom: 6rem
+}
+
+.sustainability-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem
+}
+
+.sustainability-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 500px
+}
+
+.sustainability-image {
+    flex-basis: 50%
+}
+
+.sustainability-text {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.sustainability-text h3 {
+    color: #fdf4db;
+    font-size: 2rem;
+    text-transform: uppercase
+}
+
+.sustainability-text p {
+    width: 75%;
+    font-size: 1.2rem;
+    color: #00fbf6
+}
+
+.projects-contact {
+    background-image: url('projects-contact.png');
+    height: 600px;
+    margin-top: 5rem;
+    background-position: center 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.projects-contact-text {
+    text-align: center
+}
+
+.projects-contact-title {
+    font-size: 3rem;
+    color: #fdf4db;
+    padding-bottom: .5rem
+}
+
+.projects-contact-subtitle {
+    font-size: 1.2rem;
+    color: #00fbf6;
+    padding-bottom: .7rem
+}
+
+.projects-contact-button {
+    position: relative;
+    padding: 15px 25px;
+    background-color: #071220;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 0;
+    overflow: hidden;
+    transition: .3s;
+    text-transform: uppercase
+}
+
+.projects-contact-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00fbf6, #25f0f1, #54e1f7, #8dd1fb, #b896ff);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1
+}
+
+.projects-contact-button:hover {
+    background-color: #fff;
+    color: #071220;
+    transform: scale(1.1);
+    cursor: pointer
+}
+
+@media (max-width:768px) {
+    .projects-hero-section {
+        height: 60vh;
+    }
+
+    .projects-text {
+        width: 80%;
+        height: 40%;
+        padding-left: 1rem !important;
+        padding-right: 1rem;
+    }
+
+    .projects-title {
+        font-size: 1.5rem;
+    }
+
+    .projects-subtitle {
+        font-size: 1rem;
+    }
+
+    .featured-projects {
+        padding: 3rem 1rem;
+    }
+
+    .section-featured-title {
+        font-size: 2.2rem;
+        margin-bottom: 0 !important;
+    }
+
+    .section-featured-subtitle {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .countries-section {
+        padding: 3rem 1rem;
+    }
+
+    .countries-section-title {
+        font-size: 2.2rem;
+    }
+
+    .countries-section-subtitle {
+        font-size: 1rem;
+    }
+
+
+    .countries-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .germany-image {
+        object-fit: cover;
+    }
+
+    .sustainability-title {
+        padding-left: 1rem;
+        font-size: 2.2rem;
+    }
+
+    .sustainability-subtitle {
+        padding-left: 1rem;
+        font-size: 1rem;
+    }
+
+    .sustainability-section {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .sustainability-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sustainability-image {
+        order: 1;
+    }
+
+    .sustainability-text {
+        order: 2;
+        text-align: center;
+    }
+
+    .sustainability-projects {
+        gap: 5rem;
+    }
+
+    .sustainability-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .sustainability-text p {
+        font-size: 1rem;
+    }
+
+    .projects-contact-title {
+        font-size: 2.2rem;
+    }
+
+    .projects-contact-subtitle {
+        font-size: 1rem;
+    }
+
+}
