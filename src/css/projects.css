@@ -435,4 +435,58 @@
         font-size: 1rem;
     }
 
+    .featured-projects .section-featured-subtitle {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width:420px) {
+    .section-featured-title {
+        white-space: nowrap;
+        font-size: 2.1rem;
+    }
+
+    .countries-section-title {
+        font-size: 2.1rem;
+    }
+
+    .countries-section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .sustainability-title {
+        font-size: 2.1rem;
+    }
+
+    .sustainability-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .sustainability-text p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .sustainability-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .projects-contact-title {
+        font-size: 2rem;
+    }
+
+    .projects-contact-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .projects-title {
+        font-size: 1.4rem;
+    }
+
+    .projects-subtitle {
+        font-size: 0.9rem;
+    }
+
 }

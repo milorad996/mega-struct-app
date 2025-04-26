@@ -275,6 +275,14 @@
     .section-title {
         font-size: 2.2rem;
     }
+}
 
+@media (max-width:420px) {
+    .contact-title {
+        font-size: 2.4rem;
+    }
 
+    .contact-subtitle {
+        font-size: 1rem;
+    }
 }

@@ -83,11 +83,13 @@
 
 .service-title {
     color: #fdf4db;
-    margin-bottom: .7rem
+    margin-bottom: 0.7rem;
+    font-size: 1.5rem;
 }
 
 .service-subtitle {
-    color: #cacaca
+    color: #cacaca;
+    font-size: 1.1rem;
 }
 
 .core-title,
@@ -395,9 +397,48 @@
         font-size: 2.2rem;
     }
 
+    .process-text .step-desc {
+        text-align: center;
+        font-size: 1.1rem !important;
+    }
 
+    .projects-preview-section {
+        padding-top: 5rem;
 
+    }
 
+    .why-choose-us .choose-subtitle {
+        text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .core-title {
+        white-space: nowrap;
+        font-size: 2.1rem;
+    }
+
+    .process-subtitle {
+        font-size: 1rem !important;
+    }
+
+    .process-text .step-desc {
+        text-align: center;
+        font-size: 1rem !important;
+    }
+
+    .step-title {
+        white-space: nowrap;
+        font-size: 1.4rem;
+    }
+
+    .projects-preview-title {
+        font-size: 1.35rem;
+    }
+
+    .choose-subtitle {
+        font-size: 1rem;
+    }
 
 
 
