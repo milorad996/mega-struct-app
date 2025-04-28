@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mega-struct-app/static/css/main.805879df.css",
-    "main.js": "/mega-struct-app/static/js/main.0c918eb3.js",
+    "main.js": "/mega-struct-app/static/js/main.ae6d2d4c.js",
     "static/css/819.13654235.chunk.css": "/mega-struct-app/static/css/819.13654235.chunk.css",
     "static/js/819.f61153ed.chunk.js": "/mega-struct-app/static/js/819.f61153ed.chunk.js",
     "static/css/539.055f0d5f.chunk.css": "/mega-struct-app/static/css/539.055f0d5f.chunk.css",
@@ -35,7 +35,7 @@
     "static/media/fa-v4compatibility.woff2": "/mega-struct-app/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/mega-struct-app/index.html",
     "main.805879df.css.map": "/mega-struct-app/static/css/main.805879df.css.map",
-    "main.0c918eb3.js.map": "/mega-struct-app/static/js/main.0c918eb3.js.map",
+    "main.ae6d2d4c.js.map": "/mega-struct-app/static/js/main.ae6d2d4c.js.map",
     "819.13654235.chunk.css.map": "/mega-struct-app/static/css/819.13654235.chunk.css.map",
     "819.f61153ed.chunk.js.map": "/mega-struct-app/static/js/819.f61153ed.chunk.js.map",
     "539.055f0d5f.chunk.css.map": "/mega-struct-app/static/css/539.055f0d5f.chunk.css.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.805879df.css",
-    "static/js/main.0c918eb3.js"
+    "static/js/main.ae6d2d4c.js"
   ]
 }
